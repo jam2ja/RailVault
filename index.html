@@ -120,6 +120,9 @@
             .logo {
                 margin-bottom: 10px; /* 增加 LOGO 與導航的間距 */
             }
+            .img-container {
+                height: 300px; /* 手機版圖片高度較小 */
+            }
              .text-overlay {
                 position: static; /* 恢復正常流定位 */
                 transform: none;  /* 移除居中效果 */
@@ -139,7 +142,10 @@
     </style>
 </head>
 <body>
-    <img src="CoalCarrier_new.jpg" alt="Railway header pic">
+    <div class="img-container">
+        <img src="CoalCarrier_new.jpg" alt="Railway header pic">
+    </div>
+    
     <div class="header">
         <div class="logo">RailVault</div>
         <div class="nav">
