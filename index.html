@@ -115,6 +115,23 @@
             .logo {
                 margin-bottom: 10px; /* 增加 LOGO 與導航的間距 */
             }
+             .text-overlay {
+                top: 20%; /* 調整文字區塊的位置更靠近圖片上方 */
+                transform: translate(-50%, 0); /* 移除垂直置中 */
+            }
+        
+            .text-overlay h1 {
+                font-size: 2rem; /* 手機版的標題字體大小 */
+                margin-bottom: 0; /* 移除底部間距，避免影響布局 */
+            }
+        
+            .text-overlay p {
+                position: static; /* 恢復段落為正常流定位 */
+                margin-top: 20px; /* 添加與圖片的間距 */
+                color: #556B2F; /* 段落顏色與背景形成對比 */
+                text-shadow: none; /* 手機段落不需要陰影 */
+                padding: 0 10px; /* 添加左右間距確保可讀性 */
+            }
             body {
                 padding-top: 500px;
                 padding: 20px;
