@@ -30,29 +30,8 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 40px;
-            padding-right: 40px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 1000; /* 確保標頭位於最上層 */
-        }
-         /* 對於手機 (寬度小於768px) 的樣式 */
-        @media (max-width: 768px) {
-            .header {
-                height: auto; /* 自動調整高度 */
-                flex-direction: column; /* 標頭內容垂直排列 */
-                align-items: flex-start; /* 左對齊內容 */
-                padding: 10px;
-            }
-            .nav {
-                flex-direction: column; /* 將連結堆疊 */
-                gap: 5px; /* 減少垂直間距 */
-            }
-    
-            .logo {
-                margin-bottom: 10px; /* 增加 LOGO 與導航的間距 */
-            }
-            body {
-                padding: 10px;
-            }
         }
 
         /* 標頭內容內的連結樣式 */
@@ -82,6 +61,27 @@
         h2 {
             font-size: 1.5rem;
             text-align: center;
+        }
+        
+         /* 對於手機 (寬度小於768px) 的樣式 */
+        @media (max-width: 768px) {
+            .header {
+                height: auto; /* 自動調整高度 */
+                flex-direction: column; /* 標頭內容垂直排列 */
+                align-items: flex-start; /* 左對齊內容 */
+                padding: 30px;
+            }
+            .nav {
+                flex-direction: column; /* 將連結堆疊 */
+                gap: 5px; /* 減少垂直間距 */
+            }
+    
+            .logo {
+                margin-bottom: 10px; /* 增加 LOGO 與導航的間距 */
+            }
+            body {
+                padding: 10px;
+            }
         }
     </style>
 </head>
