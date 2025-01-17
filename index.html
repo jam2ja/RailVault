@@ -66,6 +66,14 @@
             font-size: 1.5rem;
             text-align: center;
         }
+
+        img {
+            display: block; /* Removes any extra space below the image caused by inline display */
+            width: 100%;    /* Makes the image span the full width of the container */
+            height: auto;   /* Keeps the aspect ratio intact */
+            margin: 0;      /* Removes any default margin */
+            padding: 0;     /* Ensures no extra space around the image */
+        }
         
          /* 對於手機 (寬度小於768px) 的樣式 */
         @media (max-width: 768px) {
