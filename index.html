@@ -18,6 +18,9 @@
             height: auto;   /* 保持原始比例 */
             margin: 0;      /* 移除外邊距 */
             padding: 0;     /* 移除內邊距 */
+            position: absolute; /* Ensure the image aligns to the top of the page */
+            top: 0;         /* Align the image to the top */
+            left: 0; 
         }
         body {
             font-family: Cambria, Georgia, serif;
@@ -86,6 +89,7 @@
                 flex-direction: column; /* 標頭內容垂直排列 */
                 align-items: flex-start; /* 左對齊內容 */
                 padding: 10px;
+                padding-top: 80px;
             }
             .nav {
                 flex-direction: column; /* 將連結堆疊 */
