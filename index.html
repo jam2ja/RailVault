@@ -49,6 +49,10 @@
         .content {
             margin-top: 300px; /* 確保內容不被 header 遮擋 */
             padding: 40px;
+            transition: margin-top 0.3s ease;
+        }
+        header.shrink + .content {
+            margin-top: 80px; /* 收縮後更新內容的偏移量 */
         }
 
         /* 標頭內容內的連結樣式 */
@@ -103,7 +107,7 @@
     </style>
 </head>
 <body>
-    <div class="header">
+    <div id="header">
         <div class="logo">RailVault</div>
         <div class="nav">
             <a href="#content">About</a>
