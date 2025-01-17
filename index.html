@@ -14,7 +14,34 @@
             margin: 0;
             font-size: 20px;
             padding: 100px;
+            padding-top: 60px;
             line-height:1.5;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #2F4F4F;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* 確保標頭位於最上層 */
+        }
+
+        /* 標頭內容內的連結樣式 */
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
         }
         a {
             color: #8FBC8F;
@@ -36,47 +63,60 @@
     </style>
 </head>
 <body>
-    <h1>RailVault</h1>
-    <p align="left">This website explores the concept of repurposing old coal carriages to house sustainable zinc bromide batteries, 
-        creating decentralized energy storage hubs. These hubs can store renewable energy, stabilize grids, 
-        and provide backup power for trains and nearby communities.</p>
+    <div class="header">
+        <div class="logo">My Website</div>
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="content">
+        <h1>RailVault</h1>
+        <p align="left">This website explores the concept of repurposing old coal carriages to house sustainable zinc bromide batteries, 
+            creating decentralized energy storage hubs. These hubs can store renewable energy, stabilize grids, 
+            and provide backup power for trains and nearby communities.</p>
+        
+        <h2>Why Does This Idea Exist?</h2>
+        <p>My name is Jamison Young, and I’ve been restoring an old railway station in the Czech Republic as part of a personal and community-driven project. Recently, a set of old coal carriages was parked in front of my station. This sparked an idea: could these unused carriages be repurposed to house sustainable energy storage solutions, such as zinc bromide batteries?</p>
     
-    <h2>Why Does This Idea Exist?</h2>
-    <p>My name is Jamison Young, and I’ve been restoring an old railway station in the Czech Republic as part of a personal and community-driven project. Recently, a set of old coal carriages was parked in front of my station. This sparked an idea: could these unused carriages be repurposed to house sustainable energy storage solutions, such as zinc bromide batteries?</p>
-
-    <p>The concept is simple yet innovative. Zinc bromide batteries are a promising alternative to lithium-ion batteries, offering several advantages:</p>
-    <ul>
-        <li><strong>Heat Resistance:</strong> Zinc bromide batteries perform well in high temperatures, reducing risks associated with overheating.</li>
-        <li><strong>Recyclability:</strong> They are easier and less polluting to recycle compared to lithium-ion batteries.</li>
-        <li><strong>Weight Compatibility:</strong> Their heavy nature makes coal carriages a practical housing solution, as these carriages are designed to carry significant loads.</li>
-    </ul>
-
-    <p>This idea leverages existing infrastructure. Old railway tracks and stations, often underutilized, could serve as renewable energy hubs. By parking battery-equipped carriages on these tracks, we can create a decentralized energy storage network with multiple applications:</p>
-    <ul>
-        <li><strong>Renewable Energy Storage:</strong> Collecting solar, wind, or other renewable energy during the day and storing it for nighttime use.</li>
-        <li><strong>Grid Stabilization:</strong> Balancing grid demands and providing energy overflow storage, especially for nuclear power plants.</li>
-        <li><strong>Train Power Supply:</strong> Stabilizing power for electric trains, ensuring reliable operation even during surges in energy demand.</li>
-        <li><strong>Emergency Power Backup:</strong> Serving as a critical energy reserve for railway stations and nearby towns during emergencies.</li>
-    </ul>
-
-    <p>This concept draws inspiration from advancements in zinc bromide battery technology. For example, researchers at Sydney University have developed a zinc bromide gel battery, and companies like Gelion in the UK are working to commercialize and refine this technology.</p>
-    <h2>Explore Vision</h2>
-    <ul>
-        <li><a href="zinc-bromide-batteries.html">Learn More About Zinc Bromide Batteries</a></li>
-        <li><a href="pros-cons-zinc-bromide-batteries.html">Pros and Cons of Zinc-Bromine Batteries vs. Lithium-Ion Batteries</a></li>
-    </ul>
-
-    <h3>Open-Source Collaboration</h3>
-    <p>This project is released under the Creative Commons Zero License, meaning anyone is free to use, modify, or build on the idea. To encourage collaboration, we’ve created a GitHub project where contributors can join the effort to refine and develop this vision further.</p>
-    <h3>Get Involved</h3>
-    <p>If you’re interested in supporting or expanding on this project, feel free to contact me:</p>
-    <ul>
-        <li><strong>Name:</strong> Jamison Young</li>
-        <li><strong>Email:</strong> <a href="mailto:jamisony@gmail.com">jamisony@gmail.com</a></li>
-    </ul>
-    <p>
-        Together, we can explore how to transform unused rail infrastructure into a sustainable energy storage network that benefits local communities and stabilizes energy systems.
-    </p>
+        <p>The concept is simple yet innovative. Zinc bromide batteries are a promising alternative to lithium-ion batteries, offering several advantages:</p>
+        <ul>
+            <li><strong>Heat Resistance:</strong> Zinc bromide batteries perform well in high temperatures, reducing risks associated with overheating.</li>
+            <li><strong>Recyclability:</strong> They are easier and less polluting to recycle compared to lithium-ion batteries.</li>
+            <li><strong>Weight Compatibility:</strong> Their heavy nature makes coal carriages a practical housing solution, as these carriages are designed to carry significant loads.</li>
+        </ul>
+    
+        <p>This idea leverages existing infrastructure. Old railway tracks and stations, often underutilized, could serve as renewable energy hubs. By parking battery-equipped carriages on these tracks, we can create a decentralized energy storage network with multiple applications:</p>
+        <ul>
+            <li><strong>Renewable Energy Storage:</strong> Collecting solar, wind, or other renewable energy during the day and storing it for nighttime use.</li>
+            <li><strong>Grid Stabilization:</strong> Balancing grid demands and providing energy overflow storage, especially for nuclear power plants.</li>
+            <li><strong>Train Power Supply:</strong> Stabilizing power for electric trains, ensuring reliable operation even during surges in energy demand.</li>
+            <li><strong>Emergency Power Backup:</strong> Serving as a critical energy reserve for railway stations and nearby towns during emergencies.</li>
+        </ul>
+    
+        <p>This concept draws inspiration from advancements in zinc bromide battery technology. For example, researchers at Sydney University have developed a zinc bromide gel battery, and companies like Gelion in the UK are working to commercialize and refine this technology.</p>
+        <h2>Explore Vision</h2>
+        <ul>
+            <li><a href="zinc-bromide-batteries.html">Learn More About Zinc Bromide Batteries</a></li>
+            <li><a href="pros-cons-zinc-bromide-batteries.html">Pros and Cons of Zinc-Bromine Batteries vs. Lithium-Ion Batteries</a></li>
+        </ul>
+    </div>
+    
+    <div id="footer">
+        <h3>Open-Source Collaboration</h3>
+        <p>This project is released under the Creative Commons Zero License, meaning anyone is free to use, modify, or build on the idea. To encourage collaboration, we’ve created a GitHub project where contributors can join the effort to refine and develop this vision further.</p>
+        <h3>Get Involved</h3>
+        <p>If you’re interested in supporting or expanding on this project, feel free to contact me:</p>
+        <ul>
+            <li><strong>Name:</strong> Jamison Young</li>
+            <li><strong>Email:</strong> <a href="mailto:jamisony@gmail.com">jamisony@gmail.com</a></li>
+        </ul>
+        <p>
+            Together, we can explore how to transform unused rail infrastructure into a sustainable energy storage network that benefits local communities and stabilizes energy systems.
+        </p>
+    </div>
     
  </body>
 </html>
