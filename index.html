@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>RailVault</title>
     <style>
-        html, body {
-            margin: 0; /* 清除頁面邊距 */
-            padding: 0; /* 清除頁面內邊距 */
-            width: 100%; /* 撐滿整個視窗 */
-            overflow-x: hidden; /* 防止水平滾動條 */
-        }
+        /*html, body {
+            margin: 0; 
+            padding: 0; 
+            width: 100%; 
+            overflow-x: hidden; 
+        }*/
         img {
             display: block; /* 避免行內多餘間距 */
             width: 100%;    /* 圖片寬度覆蓋整個頁面 */
@@ -23,6 +23,7 @@
             left: 0; 
         }
         body {
+            margin: 0;
             font-family: Cambria, Georgia, serif;
             background-color: #F0F8FF;
             color: #556B2F;
@@ -89,7 +90,6 @@
                 flex-direction: column; /* 標頭內容垂直排列 */
                 align-items: flex-start; /* 左對齊內容 */
                 padding: 10px;
-                padding-top: 80px;
             }
             .nav {
                 flex-direction: column; /* 將連結堆疊 */
@@ -100,6 +100,7 @@
                 margin-bottom: 10px; /* 增加 LOGO 與導航的間距 */
             }
             body {
+                padding-top: 80px;
                 padding: 20px;
             }
         }
